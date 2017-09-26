@@ -10,5 +10,9 @@ sed -i '11s/.*//' .env
 sed -i '12s/.*//' .env
 sed -i '13s/.*//' .env
 
+composer require --dev ajthinking/modeltables
+composer require laravelcollective/html
+
+
 php artisan make:auth
 php artisan migrate:fresh
